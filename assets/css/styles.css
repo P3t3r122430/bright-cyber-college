@@ -205,3 +205,16 @@ footer {
 .hero-button:hover {
   background: #c62828;
 }
+/* Make all text left-aligned on mobile screens */
+@media (max-width: 768px) {
+  body,
+  h1, h2, h3, h4, h5, h6,
+  p,
+  .container,
+  .content,
+  section,
+  article,
+  .hero {
+    text-align: left;
+  }
+}
