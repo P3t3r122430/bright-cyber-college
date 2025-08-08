@@ -23,7 +23,7 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <section>
+  <section class="reveal">
     <h2>Stationery for School & Office</h2>
     <ul>
       <li>JK Copier Papers</li>
@@ -45,7 +45,7 @@
     </ul>
 
     <p>All products available at our Kabati shop — Bright Café, next to Bunker Butchery. Affordable prices. Walk in today!</p>
-  </section>
+  <section class="reveal">
 
   <footer>
     <p>&copy; 2025 Bright Computer College. All rights reserved.</p>
@@ -85,6 +85,28 @@
       header.classList.remove('scrolled');
     }
   });
+</script>
+<!-- ScrollReveal JS -->
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+  ScrollReveal({ 
+    reset: false,
+    distance: '60px',
+    duration: 800,
+    delay: 100 
+  });
+
+  ScrollReveal().reveal('section, .reveal', { origin: 'bottom' });
+</script>
+<script>
+  ScrollReveal({ 
+    reset: false,
+    distance: '60px',
+    duration: 800,
+    delay: 100 
+  });
+
+  ScrollReveal().reveal('section, .reveal', { origin: 'bottom' });
 </script>
 </body>
 </html>

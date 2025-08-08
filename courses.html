@@ -23,7 +23,7 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <section>
+  <section class="reveal">
     <h2>Full Course Package</h2>
     <p><strong>Duration:</strong> 2 months</p>
     <p><strong>Class Time:</strong> 2 hours per day</p>
@@ -47,7 +47,7 @@
     </ul>
 
     <p>All lessons are practical and instructor-led. Join today and start your digital journey!</p>
-  </section>
+  <section class="reveal">
 
   <footer>
     <p>&copy; 2025 Bright Computer College. All rights reserved.</p>
@@ -87,6 +87,18 @@
       header.classList.remove('scrolled');
     }
   });
+</script>
+<!-- ScrollReveal JS -->
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+  ScrollReveal({ 
+    reset: false,
+    distance: '60px',
+    duration: 800,
+    delay: 100 
+  });
+
+  ScrollReveal().reveal('section, .reveal', { origin: 'bottom' });
 </script>
 </body>
 </html>

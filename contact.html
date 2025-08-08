@@ -23,7 +23,7 @@
     <a href="contact.html" style="font-weight: bold;">Contact</a>
   </nav>
 
-  <section>
+  <section class="reveal">
     <h2>We’d love to hear from you</h2>
     <p>If you have any questions, need help, or want to enroll, just fill out the form below and we’ll get back to you shortly.</p>
 
@@ -40,10 +40,10 @@
       <button type="submit">Send Message</button>
     </form>
 
-    <div class="contact-email">
+    <div class="main-content"></div>="contact-email">
       Or email us directly: <strong>brightcyber23@gmail.com</strong>
     </div>
-  </section>
+  <section class="reveal">
 
   <footer>
     <p>&copy; 2025 Bright Computer College. All rights reserved.</p>
@@ -83,6 +83,18 @@
       header.classList.remove('scrolled');
     }
   });
+</script>
+<!-- ScrollReveal JS -->
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+  ScrollReveal({ 
+    reset: false,
+    distance: '60px',
+    duration: 800,
+    delay: 100 
+  });
+
+  ScrollReveal().reveal('section, .reveal', { origin: 'bottom' });
 </script>
 </body>
 </html>

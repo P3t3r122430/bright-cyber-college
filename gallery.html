@@ -24,11 +24,11 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <section>
+  <section class="reveal">
     <h2>Gallery</h2>
     <p>Explore some highlights from our computer training sessions, cyber services, and product displays.</p>
 
-    <div class="gallery-grid">
+    <div class="main-content">="gallery-grid">
       <img src="assets/images/gallery1.jpg" alt="Gallery Image 1" />
       <img src="assets/images/gallery2.jpg" alt="Gallery Image 2" />
       <img src="assets/images/gallery3.jpg" alt="Gallery Image 3" />
@@ -37,7 +37,7 @@
       <img src="assets/images/gallery6.jpg" alt="Gallery Image 6" />
       <img src="assets/images/gallery7.jpg" alt="Gallery Image 7" />
     </div>
-  </section>
+ <section class="reveal">
 
   <footer>
     <p>&copy; 2025 Bright Computer College, Kabati. All rights reserved.</p>
@@ -77,6 +77,18 @@
       header.classList.remove('scrolled');
     }
   });
+</script>
+<!-- ScrollReveal JS -->
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+  ScrollReveal({ 
+    reset: false,
+    distance: '60px',
+    duration: 800,
+    delay: 100 
+  });
+
+  ScrollReveal().reveal('section, .reveal', { origin: 'bottom' });
 </script>
 </body>
 </html>

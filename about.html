@@ -43,7 +43,7 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <section>
+  <section class="reveal">
     <h2>Who We Are</h2>
     <p>Bright Computer College is a trusted digital training center based in Kabati, Kenya. We provide essential computer skills for individuals of all ages, preparing them for today's tech-driven world.</p>
 
@@ -58,7 +58,7 @@
       <li>Accessible location next to Bunker Butchery</li>
       <li>Hands-on practical lessons</li>
     </ul>
-  </section>
+  <section class="reveal">
 
   <footer>
     <p>&copy; 2025 Bright Computer College. All rights reserved.</p>
@@ -98,6 +98,18 @@
       header.classList.remove('scrolled');
     }
   });
+</script>
+<!-- ScrollReveal JS -->
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+  ScrollReveal({ 
+    reset: false,
+    distance: '60px',
+    duration: 800,
+    delay: 100 
+  });
+
+  ScrollReveal().reveal('section, .reveal', { origin: 'bottom' });
 </script>
 </body>
 </html>
